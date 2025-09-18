@@ -1,0 +1,157 @@
+:root {
+  --primary: #FF9100;
+  --bg: #252734;
+  --bgsecond: #333646;
+  --text: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bgsecond);
+  z-index: 1000;
+  gap: 70px;
+}
+
+.navbar a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: var(--primary);
+}
+
+.home {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.home .home-content-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.home .home-content-text p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.button:hover {
+  background: #e67e00;
+  transform: translateY(-2px);
+}
+
+.about {
+  padding: 100px 50px;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.about p, .about ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.about ul {
+  margin-left: 20px;
+}
+
+/* course */
+.projects {
+  padding: 100px 50px;
+  background: var(--bgsecond);
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: var(--primary);
+}
+
+.projects .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.projects-card {
+  background: #2e2f3e;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.projects-card:hover {
+  transform: translateY(-5px);
+  background: #3b3d50;
+}
+
+.projects-card h3 {
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+.projects-card p {
+  font-size: 0.95rem;
+  color: #ddd;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: var(--bgsecond);
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
